@@ -1,3 +1,5 @@
+import random from 'random';
+
 export default class Game {
 
     intervalHandle: number;
@@ -7,6 +9,6 @@ export default class Game {
     }
 
     tick() {
-        console.log("tick");
+        console.log( random.normal(0,10)() );
     }
 }
