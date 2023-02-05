@@ -3,4 +3,57 @@
 body {
   background-color: $background;
   color: $text;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hide {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+
+  div {
+    text-align: center;
+    flex: 1;
+
+    button {
+      width:100%;
+      border-radius: 0;
+      background-color: $background-highlight;
+      color: white;
+      border: 1px solid black;
+      padding: 10px 0;
+      border-left: none;
+
+      &:hover {
+        background-color: $background;
+        cursor: pointer;
+      }
+    }
+    &:last-child button {
+      border-right:none;
+    }
+  }
+}
+
+
+
+.box {
+  margin: 10px;
+}
+
+.centred {
+  text-align: center;
 }

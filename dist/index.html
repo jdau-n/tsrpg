@@ -3,35 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <title>tsrpg</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
   </head>
   <body>
     <script src="main.js"></script>
     <div class="main">
-      <div id="display-selectors">
-        <ul>
-          <li><button id="fight-button">Fight</button></li>
-          <li><button id="stats-button">Stats</button></li>
-        </ul>
-      </div>
-      <div id="fight-display">
-        <div id="fight-participants-panels">
-          <div id="friendly-display">
-            <div class="name"></div>
-            <div class="health-display"><span></span></div>
-            <div class="energy-display"><span></span></div>
-            <div class="time-display"><span></span></div>
-          </div>
-          <div id="opponent-display">
-            <div class="name"></div>
-            <div class="health-display"><span></span></div>
-            <div class="energy-display"><span></span></div>
-            <div class="time-display"><span></span></div>
-          </div>
+      <div class="top-section">
+        <div class="box">
+          <div>Foo Bar the <span>Warrior</span></div>
+          <div>Gold: 1000</div>
         </div>
+        <div class="box centred">
+          <div>Evil Dungeon of Badness</div>
+          <div>Level 3</div>
+        </div>
+        <div class="box">Save / Load</div>
       </div>
-      <div id="stats-display">
-
+      <div class="tabs">
+        <div><button id="town-button">Town</button></div>
+        <div><button id="adventure-button">Adventure</button></div>
+        <div><button id="inventory-button">Inventory</button></div>
+        <div><button id="options-button">Options / Debug</button></div>
       </div>
+      <div id="town-tab">Town</div>
+      <div id="adventure-tab">Adventure</div>
+      <div id="inventory-tab">Inventory</div>
+      <div id="options-tab">Options</div>
     </div>
   </body>
 </html>
